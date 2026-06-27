@@ -79,3 +79,31 @@ let store={
 for(let key in store){
     console.log("key = ",key, "value= ",store[key]);
 }
+//Q.print all even number from 0 to 100
+
+for(let num = 0; num<=100; num++){
+    if(num%2==0){
+        console.log(num);
+    }
+}
+
+// Q.Create a game where you start with any random game number.
+// Ask the user to keep guessing the game num. until the user enter correct value
+
+let gameNum = 25;
+
+let userNum = prompt("Guess the  game number : ");
+while(true){
+    if(userNum> gameNum){
+        console.log(lesser);
+        userNum = prompt("Guess the  game number : ");
+    }
+    else if(userNum < gameNum){
+        console.log(greater);
+        userNum = prompt("Guess the  game number : ");
+    }
+    else{
+        console.log(matched);
+    }
+    break;
+}
