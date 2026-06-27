@@ -136,3 +136,35 @@ let school = "sunbeamAcademy";
 console.log(school.toUpperCase());//not change in orignal value immutabl
 console.log(school.toLowerCase());
 
+//array
+let mark = [34,56,98,78,34];
+console.log(mark);
+console.log(mark.length);
+console.log(typeof mark);
+for(let mar of mark){//looping
+    console.log(mar);
+}
+
+//Q.For given array with marks os students ->[85,97,44,37,76,60]
+//Find the avg. marks of entire class.
+let MARKS =[85,97,44,37,76,60];
+let ADD = 0;
+
+for(let m of MARKS){
+    console.log(m);
+    ADD += m;
+    
+}
+let avg = ADD/MARKS.length;
+console.log(avg);
+
+//Q.
+let SUB= [250,645,300,900,50];
+let s = 0;
+for(let sub of SUB){
+    console.log(`value at index ${s} = ${sub}`);
+    let off = sub/10;
+    SUB[s] =SUB[s]-off;
+    console.log(`value after offer = ${SUB[s]}`);
+    s++;
+}
