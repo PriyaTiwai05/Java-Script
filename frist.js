@@ -90,7 +90,7 @@ for(let num = 0; num<=100; num++){
 // Q.Create a game where you start with any random game number.
 // Ask the user to keep guessing the game num. until the user enter correct value
 
-let gameNum = 25;
+/**let gameNum = 25;
 
 let userNum = prompt("Guess the  game number : ");
 while(true){
@@ -106,4 +106,27 @@ while(true){
         console.log(matched);
     }
     break;
+}**/
+
+
+//strings
+
+let nickName = "pia";
+console.log(nickName.length);
+for(let i =0 ; i<nickName.length;i++){
+    console.log(nickName[i]);
 }
+
+//Template Literals -> way of writing string
+let specialString = `This is a template literal`;
+console.log(typeof specialString);
+
+let intro ={
+    name: "priya",
+    age = 20,
+};
+let output = `name of student is ${intro.name} and her age is ${intro.age}`;
+console.log(output);
+console.log("name of student is ", intro.name ,"and her age is " , intro.age);
+let addition = `the sum is ${1+4+7}`;
+console.log(addition)
