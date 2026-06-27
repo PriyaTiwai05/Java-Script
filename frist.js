@@ -122,11 +122,17 @@ let specialString = `This is a template literal`;
 console.log(typeof specialString);
 
 let intro ={
-    name: "priya",
-    age = 20,
+    n: "rahul",
+    a : 20,
 };
-let output = `name of student is ${intro.name} and her age is ${intro.age}`;
+let output = `name of student is ${intro.n} and her age is ${intro.a}`;
 console.log(output);
-console.log("name of student is ", intro.name ,"and her age is " , intro.age);
+console.log("name of student is ", intro.n,"and her age is " , intro.a);
 let addition = `the sum is ${1+4+7}`;
 console.log(addition)
+
+//string method
+let school = "sunbeamAcademy";
+console.log(school.toUpperCase());//not change in orignal value immutabl
+console.log(school.toLowerCase());
+
